@@ -6,7 +6,7 @@ import "time"
 func main() {
 	// beeep.Notify("Schau aus dem Fenster", "Sonst werden deine Augen schlecht", "assets/icon.png")
 	// beeep.A32lert("Title", "Message body", "assets/icon.png")
-	freq := 100.
+	freq := beeep.DefaultFreq
 	dur := beeep.DefaultDuration
     ticker := time.NewTicker(20 * time.Minute)
     done := make(chan bool)
